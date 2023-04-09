@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>.SFUI-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="SphinixSolutionTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="247" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="247" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUL-t3-9Bb">
+                        <rect key="frame" x="5" y="5" width="223" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="IkD-aD-zLG"/>
+                            <constraint firstAttribute="width" constant="223" id="VTa-tv-9Nc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="20"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LI-2O-OZR">
+                        <rect key="frame" x="5" y="51" width="223" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="ZOw-7U-Z96"/>
+                            <constraint firstAttribute="width" constant="223" id="t4i-ri-B88"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tUL-t3-9Bb" secondAttribute="trailing" constant="5" id="2Qw-og-Mhj"/>
+                    <constraint firstAttribute="trailing" secondItem="tUL-t3-9Bb" secondAttribute="trailing" constant="5" id="4Cf-Dq-FEy"/>
+                    <constraint firstItem="tUL-t3-9Bb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="BZu-qa-7r5"/>
+                    <constraint firstItem="tUL-t3-9Bb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="PxB-Vu-sdq"/>
+                    <constraint firstItem="8LI-2O-OZR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="VJN-LS-r48"/>
+                    <constraint firstAttribute="trailing" secondItem="8LI-2O-OZR" secondAttribute="trailing" constant="5" id="cwu-HO-vwZ"/>
+                    <constraint firstItem="tUL-t3-9Bb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="elh-zY-6ck"/>
+                    <constraint firstAttribute="bottom" secondItem="8LI-2O-OZR" secondAttribute="bottom" constant="5" id="g2V-IW-z74"/>
+                    <constraint firstItem="8LI-2O-OZR" firstAttribute="top" secondItem="tUL-t3-9Bb" secondAttribute="bottom" constant="8" symbolic="YES" id="nQ1-7f-tBc"/>
+                    <constraint firstItem="tUL-t3-9Bb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="nka-sc-wWu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="agelbl" destination="8LI-2O-OZR" id="kYC-0E-8Nj"/>
+                <outlet property="firstnamelbl" destination="tUL-t3-9Bb" id="EXv-Jz-Oqs"/>
+            </connections>
+            <point key="canvasLocation" x="71.739130434782609" y="86.049107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
